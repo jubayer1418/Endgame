@@ -26,22 +26,6 @@ const Login = () => {
     SingIn(email, password)
       .then((result) => {
         console.log(result.user.displayName);
-        const name = result.user.displayName;
-        const img = result.user.photoURL;
-        const role = "student";
-        const saveUser = { name, email, role, img };
-        fetch(`${import.meta.env.VITE_SERVER_LINK}/users`, {
-          method: "POST",
-          headers: {
-            "content-type": "application/json",
-          },
-          body: JSON.stringify(saveUser),
-        }).catch((err) => {
-          setLoading(false);
-          toast.error(err.message);
-        });
-
-        navigete("/");
       })
       .catch((err) => {
         setLoading(false);
@@ -118,7 +102,7 @@ const Login = () => {
                 </label>
               </div>
               <div className="form-control mt-6">
-                <button className="btn bg-[#E0B573] text-[#110C04] hover:text-white hover:bg-[#ff9900]">
+                <button className="btn bg-[#397dfd] text-[#110C04] hover:text-white hover:bg-[#3072ee]">
                   Login
                 </button>
               </div>

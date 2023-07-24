@@ -36,7 +36,7 @@ const Google = () => {
   return (
     <span
       onClick={handlegooglelogin}
-      className="bg-[#E0B573] hover:text-white hover:bg-[#ff9900] flex items-center justify-center cursor-pointer  text-[#110C04] font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline mt-5"
+      className="bg-[#397dfd] hover:text-white hover:bg-[#3072ee] flex items-center justify-center cursor-pointer  text-[#110C04] font-bold py-3 px-4 rounded focus:outline-none focus:shadow-outline mt-5"
     >
       <FaGoogle></FaGoogle>
       <span className="ml-2">Sign in with Google</span>
